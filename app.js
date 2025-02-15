@@ -24,15 +24,15 @@ let tentativas = 1;
 
 
 mostrarTextoTela ('h1', 'Jogo do número secreto');
-mostrarTextoTela ('p', 'Escolha um número de 1 a 10');
+mostrarTextoTela ('p', 'Escolha um número de 1 a 50');
 
 
 console.log(numeroAleatorio);
 
 function gerarNumeroAleatorio(){
-    let numeroGerado = Math.floor(Math.random()*10+1);
+    let numeroGerado = Math.floor(Math.random()*50+1);
     if (listaNumerosGerados.includes(numeroGerado)){
-        return gerarNumeroAleatorio();
+        return gerarNumeroAleatorio(); 
     }else{
         listaNumerosGerados.push(numeroGerado);
         console.log(listaNumerosGerados);
